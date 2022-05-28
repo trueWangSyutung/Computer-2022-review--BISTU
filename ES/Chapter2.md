@@ -1,4 +1,6 @@
 # STM32F4时钟系统
+RCC，Reset and Clock Control（复位和时钟控制），在绝大部分MCU芯片中都包含复位和时钟控制模块，也是MCU重要的组成部分。
+
 STM32F4  有5个时钟源:HSI、HSE、LSI、LSE、PLL。
  
 ① LSI是低速内部时钟，RC振荡器，频率为32kHz，提供低功耗时钟。主要供独立看门狗和自动唤醒单元使用。
@@ -20,6 +22,19 @@ STM32F4  有5个时钟源:HSI、HSE、LSI、LSE、PLL。
 
 SysTick定时器被捆绑在NVIC中，用于产生SYSTICK异常（异常号：15）。\
 SysTick中断的优先级也可以设置。
+
+##
+自由运行时钟(free running clock)FCLK
+
+HCLK ：AHB总线时钟
+
+FCLK,提供给CPU内核的时钟信号,CPU的主频就是指这个信号; 
+
+HCLK,提供给高速总线AHB的时钟信号; 
+
+PCLK,提供给低速总线APB的时钟信号;
+
+
 
 ## 相关寄存器
 |||
@@ -55,7 +70,7 @@ PLL：可以选用HSE\HSI做时钟源.
 
 ![](image/2.1.png)
 
-
+![](image/clock.png)
 
 
 

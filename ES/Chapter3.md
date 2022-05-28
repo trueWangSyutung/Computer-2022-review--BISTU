@@ -27,6 +27,20 @@ GPIOH.0,  GPIOH.1 外加这2个IO\
 ### 端口位复用功能寄存器
 ![](image/3.4.png)
 
+## 相关函数
+###  输入、输出、复用、模拟； 输出包括：开漏、推挽
+![](image/t2.png)
+###  设置端口及引脚（函数）
+![](image/t1.png)
+### AF 复用 GPIO 引脚
+```c
+GPIO_PinAFConfig(GPIOB, GPIO_PinSource10, GPIO_AF_USART3); // PB10 复用为 USART3
+GPIO_PinAFConfig(GPIOB, GPIO_PinSource11, GPIO_AF_USART3); // PB11 复用为 USART3
+GPIO_PinAFConfig(GPIOB, GPIO_PinSource10, GPIO_AF_SPI2); // PB10 复用为 SPI2
+GPIO_PinAFConfig(GPIOB, GPIO_PinSource14, GPIO_AF_SPI2); // PB14 复用为 SPI2
+GPIO_PinAFConfig(GPIOB, GPIO_PinSource15, GPIO_AF_SPI2); // PB15 复用为 SPI2
+```
+
 
 ## 作业
 ### 写出以下寄存器的32位地址：GPIOI_MODER、GPIOH_OTYPER、GPIOG_PUPDR。
