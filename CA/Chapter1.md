@@ -39,7 +39,6 @@ $$
     = \frac{1}{(1 - Fe) + \frac{Fe}{Se}}
 $$
 当有多个部件可以加速的时候，其系统加速比的计算方法：
-
 $$ 
     Sn = \frac{T_{beforeimproved}}{T_{afterimproved}}
     = \frac{1}{(1 - \sum_{i=1}^{n} Fe_i) + \sum_{i=1}^{n} (\frac{Fe}{Se})_{i}}
