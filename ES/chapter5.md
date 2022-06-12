@@ -9,7 +9,7 @@
 
 ## 歩距角
 $$
-   \theta = \frac{360^{\circ}}{转子齿数J*运行拍数n} 
+   \theta = \frac{360^{\circ}}{转子齿数J*运行拍数n} = \frac{360^{\circ}}{50\times 4} = 1.8^{\circ}
 $$
 
 # 看门狗

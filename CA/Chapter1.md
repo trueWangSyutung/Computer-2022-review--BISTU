@@ -30,8 +30,10 @@ $$
 总的执行时间计算方法：
 *(其中，afterimproved代表改进后的，beforeimproved代表改进前 ， unimproved代表未改进的（即不能改进的部分），improved代表可以改进的)*
 $$
-    T_{afterimproved} = T_{unimproved} + T_{improved}
-    = (1 - Fe) * T_{beforeimproved} + \frac{Fe * T_{beforeimproved}}{Se} \       
+\begin{align*}
+            T_{afterimproved} &= T_{unimproved} + T_{improved}\\
+    &= (1 - Fe) * T_{beforeimproved} + \frac{Fe * T_ {beforeimproved}}{Se}  
+\end{align*}
 $$
 系统加速比的计算方法：
 $$ 
@@ -135,3 +137,9 @@ $$
 ![](../image/1.5.png)
 ### 提高并行性
 ![](../image/1.6.png)
+
+
+$$
+    
+
+$$
